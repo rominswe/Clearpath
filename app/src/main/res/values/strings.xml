@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Clearpath</string>
+    <string name="for_more_info_contact_support">For more info, contact support</string>
+    <string name="dropdown_menu">Dropdown Menu</string>
+    <string name="profile">Profile</string>
+    <string name="status_ready">Status: Ready</string>
+    <string name="start_navigation">Start Navigation</string>
+    <string name="welcome_to_the_home_page">Welcome to the Home Page</string>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header Section (Optional, can include a title, image, etc.) -->
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_the_home_page"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Button with ID to Start Navigation -->
+    <Button
+        android:id="@+id/start_navigation_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_navigation"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Status Text (Showing Ready or Navigation Status) -->
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status_ready"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"/>
+
+    <!-- Profile Icon Button (Top-Right Corner, optional) -->
+    <Button
+        android:id="@+id/profile_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile"
+        android:layout_gravity="end"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Dropdown Menu (Optional, can be added for extra navigation or features) -->
+    <Button
+        android:id="@+id/dropdown_menu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dropdown_menu"
+        android:layout_gravity="start"
+        android:layout_marginTop="10dp"
+        tools:ignore="PrivateResource" />
+
+    <!-- Footer or Additional Info (Optional) -->
+    <TextView
+        android:id="@+id/footer_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/for_more_info_contact_support"
+        android:textSize="12sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
