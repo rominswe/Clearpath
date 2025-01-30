@@ -40,20 +40,68 @@
             </intent-filter>
         </activity>
 
+        <!--  UserSignUpActivity -->
+        <activity
+            android:name=".UserSignUpActivity"
+            android:exported="true">
+            <!-- Optional Intent Filter can go here -->
+        </activity>
+
+        <!-- UserLoginActivity -->
+        <activity
+            android:name=".UserLoginActivity"
+            android:exported="true">
+            <!-- Optional Intent Filter can go here -->
+        </activity>
+
         <!-- UserHomePageActivity -->
         <activity
-            android:name=".UserHomePageActivity"
+        android:name=".UserHomePageActivity"
+        android:exported="true">
+            <!-- Optional Intent Filter can go here -->
+        </activity>
+
+        <!-- UserProfileInformationActivity -->
+        <activity
+            android:name=".UserProfileInformationActivity"
+            android:exported="true">
+            <!-- Optional Intent Filter can go here -->
+        </activity>
+
+        <!-- AssistantSignUpActivity -->
+        <activity
+            android:name=".AssistantSignUpActivity"
+            android:exported="true">
+            <!-- Optional Intent Filter can go here -->
+        </activity>
+
+        <!-- AssistantLoginActivity -->
+        <activity
+        android:name=".AssistantLoginActivity"
+        android:exported="true">
+            <!-- Optional Intent Filter can go here -->
+        </activity>
+
+        <!-- AssistantHomePageActivity -->
+        <activity
+            android:name=".AssistantHomePageActivity"
             android:exported="true">
             <!-- Optional Intent Filter can go here -->
         </activity>
 
         <!-- AssistantMonitoringActivity -->
         <activity
-            android:name=".AssistantMonitoringActivity"
-            android:exported="true">
+        android:name=".AssistantMonitoringActivity"
+        android:exported="true">
             <!-- Optional Intent Filter can go here -->
         </activity>
 
+        <!-- AssistantInformationActivity -->
+        <activity
+            android:name=".AssistantInformationActivity"
+            android:exported="true">
+            <!-- Optional Intent Filter can go here -->
+        </activity>
     </application>
 
 </manifest>

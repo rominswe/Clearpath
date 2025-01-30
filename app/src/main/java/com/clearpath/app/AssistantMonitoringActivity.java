@@ -49,7 +49,7 @@ public class AssistantMonitoringActivity extends AppCompatActivity {
 
     // JavaScript interface to communicate with the WebView
     public static class WebAppInterface {
-        private Context context;
+        private final Context context;
 
         public WebAppInterface(Context context) {
             this.context = context;

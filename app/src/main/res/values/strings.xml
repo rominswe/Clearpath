@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Clearpath</string>
     <string name="for_more_info_contact_support">For more info, contact support</string>
     <string name="dropdown_button_left">☰</string>
@@ -8,5 +8,39 @@
     <string name="start_navigation">Start Navigation</string>
     <string name="welcome_to_the_home_page">Welcome to the Home Page</string>
     <string name="navigate">Navigate</string>
-    <string name="bye_bye">Bye Bye</string>
+    <string name="user">User</string>
+    <string name="become_an_assistant">Become an Assistant</string>
+    <string name="welcome_choose_your_role">Welcome! Choose your role:</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="login_as_a_user">Login as a User</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="sign_up_as_an_assistant">Sign Up as an Assistant</string>
+    <string name="assistant_home">Assistant Home</string>
+    <string name="dropdown_menu" tools:ignore="PrivateResource">Dropdown Menu</string>
+    <string name="login_as_an_assistant">Login as an Assistant</string>
+    <string name="sign_up_as_a_user">Sign Up as a User</string>
+    <string name="user_profile_information">User Profile Information</string>
+    <string name="unique_code" tools:ignore="DuplicateDefinition">Unique Code: %1$s</string>
+    <string name="log_out">Log Out</string>
+    <string name="help_center">Help Center</string>
+    <string name="about_us">About Us</string>
+    <string name="notification">Notification</string>
+    <string name="menu_home">Menu_Home</string>
+    <string name="menu_sos">Menu_SOS</string>
+    <string name="menu_profile">Menu_Profile</string>
+    <string name="Notification">Bell Pin Light</string>
+    <string name="assistant">Assistant</string>
+    <string name="hospital">Hospital</string>
+    <string name="police">Police</string>
+    <string name="emergency_contacts">Emergency Contacts</string>
+    <string name="add_user">Add User</string>
+    <string name="person_c">Person C</string>
+    <string name="person_b">Person B</string>
+    <string name="person_a">Person A</string>
 </resources>

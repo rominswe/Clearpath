@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:title="@string/menu_home" />
+    <item
+        android:id="@+id/menu_sos"
+        android:title="@string/menu_sos" />
+    <item
+        android:id="@+id/menu_profile"
+        android:title="@string/menu_profile" />
+</menu>

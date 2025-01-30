@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_bell_pin_light"
+        android:title="@string/Notification"
+        android:icon="@drawable/bell_pin_light"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_about_us"
+        android:title="@string/about_us"
+        android:icon="@drawable/world_2_light"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_help_center"
+        android:title="@string/help_center"
+        android:icon="@drawable/call"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_log_out"
+        android:title="@string/log_out"
+        android:icon="@drawable/picture"
+        app:showAsAction="ifRoom" />
+
+</menu>

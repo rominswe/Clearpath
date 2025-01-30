@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="user_button" type="id" />
+    <item name="assistant_button" type="id" />
+    <item name="email_input" type="id" />
+    <item name="password_input" type="id" />
+    <item name="progress_bar" type="id" />
+    <item name="error_text" type="id" />
+    <item name="login_button" type="id" />
+    <item name="sign_up_button" type="id" />
+    <item name="first_name_input" type="id" />
+    <item name="last_name_input" type="id" />
+    <item name="phone_number_input" type="id" />
+    <item name="confirm_password_input" type="id" />
+    <item name="btnAddUser" type="id" />
+    <item name="userListContainer" type="id" />
+    <item name="emailEditText" type="id" />
+    <item name="passwordEditText" type="id" />
+    <item name="loginButton" type="id" />
+    <item name="signUpButton" type="id" />
+    <item name="errorTextView" type="id" />
+    <item name="progressBar" type="id" />
+    <item name="firstNameEditText" type="id" />
+    <item name="lastNameEditText" type="id" />
+    <item name="phoneEditText" type="id" />
+    <item name="confirmPasswordEditText" type="id" />
+    <item name="uniqueCodeTextView" type="id" />
+    <item name="menuButton" type="id" />
+    <item name="profileButton" type="id" />
+    <item name="menu_home" type="id" />
+    <item name="menu_sos" type="id" />
+    <item name="menu_profile" type="id" />
+    <item name="menu_notifications" type="id" />
+    <item name="menu_about_us" type="id" />
+    <item name="menu_log_out" type="id" />
+    <item name="menu_help_center" type="id" />
+    <item name="menu_notification" type="id" />
+    <item name="titleText" type="id" />
+    <item name="policeButton" type="id" />
+    <item name="hospitalButton" type="id" />
+    <item name="assistantButton" type="id" />
+    <item name="personAButton" type="id" />
+    <item name="personBButton" type="id" />
+    <item name="personCButton" type="id" />
+</resources>

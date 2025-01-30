@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -38,6 +39,8 @@ dependencies {
     implementation libs.constraintlayout
     implementation libs.camera.core
     implementation libs.ui.android
+    implementation libs.firebase.auth
+    implementation libs.firebase.firestore
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
@@ -66,4 +69,9 @@ dependencies {
 
     // OpenCV Dependency
     implementation project(':openCV')
+
+    //Firebase Dependency
+    implementation platform(libs.google.firebase.bom)
+    implementation libs.firebase.analytics
+
 }
