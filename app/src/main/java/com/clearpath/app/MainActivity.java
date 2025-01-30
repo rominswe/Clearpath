@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         if (OpenCVLoader.initLocal()){
-            Log.i("opencv", "OpenCV has been successfully ingtegrated");
+            Log.i("opencv", "OpenCV has been successfully integrated");
         }
     }
 }
