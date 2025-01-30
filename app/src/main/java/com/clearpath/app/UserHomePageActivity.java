@@ -18,7 +18,7 @@ public class UserHomePageActivity extends ComponentActivity {
         setContentView(R.layout.activity_user_home_page); // Set layout from XML
 
         // Initialize OpenCV
-        if (OpenCVLoader.initDebug()) {
+        if (OpenCVLoader.initLocal()) {
             Log.i("OpenCV", "OpenCV loaded successfully");
         } else {
             Log.e("OpenCV", "OpenCV loading failed");
