@@ -41,6 +41,13 @@ dependencies {
     implementation libs.ui.android
     implementation libs.firebase.auth
     implementation libs.firebase.firestore
+    implementation libs.annotations
+    implementation libs.annotations
+    implementation libs.annotations
+    implementation libs.annotations
+    implementation libs.annotations
+    implementation libs.annotations
+    implementation libs.annotations
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
@@ -56,6 +63,7 @@ dependencies {
     implementation libs.androidx.lifecycle.viewmodel
     implementation libs.androidx.lifecycle.livedata
     implementation libs.androidx.activity.ktx
+
 
     // CameraX
     implementation libs.androidx.camera.camera2

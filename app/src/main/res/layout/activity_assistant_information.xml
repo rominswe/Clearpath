@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:background="@color/gray_light"
+    android:background="@color/white"
     tools:context=".AssistantInformationActivity">
 
     <!-- Profile Button (Top-Right Corner) -->
@@ -13,12 +13,12 @@
         android:id="@+id/profileButton"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:src="@drawable/profile"
+        android:src="@drawable/picture"
         android:contentDescription="@string/profile"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"
-        android:background="?attr/selectableItemBackground" />
+        android:background="@color/black" />
 
     <!-- Dropdown Menu Button (Top-Left Corner) -->
     <ImageButton
@@ -30,7 +30,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="16dp"
-        android:background="?attr/selectableItemBackground" />
+        android:background="@color/black" />
 
     <!-- Header Text for Profile Information -->
     <TextView
@@ -112,9 +112,9 @@
             android:id="@+id/signUpButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/sign_up"
+            android:text="@string/submit"
             android:textColor="@android:color/white"
-            android:background="@color/coloraccent"
+            android:background="@color/black"
             android:layout_marginTop="16dp" />
     </LinearLayout>
 

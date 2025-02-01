@@ -31,8 +31,8 @@ public class AssistantHomePageActivity extends AppCompatActivity {
         context = this;
 
         // Initialize UI elements
-        @SuppressLint("WrongViewCast") ImageButton btnProfileMenu = findViewById(R.id.profile_button);
-        @SuppressLint("WrongViewCast") ImageButton btnDropdownMenu = findViewById(R.id.dropdown_button_left);
+        @SuppressLint("WrongViewCast") ImageButton btnProfileMenu = findViewById(R.id.btnProfileMenu);
+        @SuppressLint("WrongViewCast") ImageButton btnDropdownMenu = findViewById(R.id.btnDropdownMenu);
         Button btnAddUser = findViewById(R.id.btnAddUser);
         userListContainer = findViewById(R.id.userListContainer);
 
@@ -118,29 +118,16 @@ public class AssistantHomePageActivity extends AppCompatActivity {
 
     // Navigate based on menu selection
     private void navigateToMenu(String page) {
-        Intent intent;
-        switch (page) {
-            case "home":
-                intent = new Intent(this, UserHomePageActivity.class);
-                break;
-            case "call":
-                intent = new Intent(this, UserSOSCallingActivity.class);
-                break;
-            case "profile":
-                intent = new Intent(this, UserProfileInformationActivity.class);
-                break;
-            case "notification":
-                intent = new Intent(this, MainActivity.class);
-                break;
-            case "aboutUs":
-                intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.companywebsite.com"));
-                break;
-            case "helpCenter":
-                intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:800123456"));
-                break;
-            default:
-                throw new IllegalArgumentException("Unknown page: " + page);
-        }
+        Intent intent = switch (page) {
+            case "home" -> new Intent(this, UserHomePageActivity.class);
+            case "call" -> new Intent(this, UserSOSCallingActivity.class);
+            case "profile" -> new Intent(this, UserProfileInformationActivity.class);
+            case "notification" -> new Intent(this, MainActivity.class);
+            case "aboutUs" ->
+                    new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.companywebsite.com"));
+            case "helpCenter" -> new Intent(Intent.ACTION_DIAL, Uri.parse("tel:800123456"));
+            default -> throw new IllegalArgumentException("Unknown page: " + page);
+        };
         startActivity(intent);
     }
 

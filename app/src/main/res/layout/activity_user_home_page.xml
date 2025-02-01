@@ -8,43 +8,52 @@
     tools:context=".UserHomePageActivity">
 
 
-    <!-- Dropdown Button (Top-Left) -->
-    <Button
-        android:id="@+id/dropdown_button_left"
-        android:layout_width="90dp"
-        android:layout_height="120dp"
-        android:layout_margin="16dp"
-        android:text="@string/dropdown_button_left"
-        android:textColor="@android:color/white"
-        android:textSize="40sp"
+    <!-- Dropdown Button (Top-Left Corner) -->
+
+    <!-- Profile Button (Top-Right Corner) -->
+
+
+    <ImageButton
+        android:id="@+id/btnDropdownMenu"
+        android:layout_width="60dp"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/black"
+        android:contentDescription="@string/dropdown_menu"
+        android:src="@drawable/dropdownmenu"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,PrivateResource" />
 
-    <!-- Profile Button (Top-Right) -->
-    <Button
-        android:id="@+id/profile_button"
-        android:layout_width="101dp"
-        android:layout_height="108dp"
-        android:layout_margin="16dp"
-        android:text="@string/profile_button"
-        android:textColor="@android:color/white"
-        android:textSize="40sp"
+    <ImageButton
+        android:id="@+id/btnProfileMenu"
+        android:layout_width="57dp"
+        android:layout_height="66dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="28dp"
+        android:background="@color/black"
+        android:contentDescription="@string/profile"
+        android:src="@drawable/picture"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/start_navigation_button"
         android:layout_width="270dp"
         android:layout_height="273dp"
+        android:layout_marginBottom="192dp"
         android:background="@drawable/circle_button"
         android:text="@string/navigate"
         android:textColor="@android:color/white"
         android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="264dp"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
