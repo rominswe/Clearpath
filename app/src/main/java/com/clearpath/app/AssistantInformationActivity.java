@@ -59,14 +59,19 @@ public class AssistantInformationActivity extends AppCompatActivity {
         }
 
         progressBar.setVisibility(View.VISIBLE);
+        // Fetch the assistant details using the userId as the document ID
         database.collection("assistants").document(userId).get()
                 .addOnSuccessListener(document -> {
                     progressBar.setVisibility(View.GONE);
                     if (document.exists()) {
+                        // Set values to UI components if document exists
                         firstNameEditText.setText(document.getString("firstName"));
                         lastNameEditText.setText(document.getString("lastName"));
                         emailEditText.setText(document.getString("email"));
                         phoneEditText.setText(document.getString("phoneNumber"));
+                    } else {
+                        // Document does not exist
+                        Toast.makeText(this, "Assistant details not found", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .addOnFailureListener(e -> {
@@ -75,7 +80,6 @@ public class AssistantInformationActivity extends AppCompatActivity {
                     Toast.makeText(this, "Failed to fetch assistant details", Toast.LENGTH_SHORT).show();
                 });
     }
-
     private void showNavigationMenu(View v) {
         PopupMenu popup = new PopupMenu(this, v);
         popup.getMenuInflater().inflate(R.menu.navigation_menu, popup.getMenu());

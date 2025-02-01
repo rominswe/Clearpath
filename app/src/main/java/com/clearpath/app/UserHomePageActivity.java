@@ -11,11 +11,12 @@ import android.util.Log;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
+
 import androidx.activity.ComponentActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-import org.opencv.android.OpenCVLoader;
 
+import org.opencv.android.OpenCVLoader;
 
 public class UserHomePageActivity extends ComponentActivity {
 
@@ -26,11 +27,13 @@ public class UserHomePageActivity extends ComponentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_home_page);
 
-
         context = this;
 
-        @SuppressLint({"WrongViewCast", "MissingInflatedId", "LocalSuppress"}) ImageButton btnProfileMenu = findViewById(R.id.btnProfileMenu);
-        @SuppressLint({"WrongViewCast", "MissingInflatedId", "LocalSuppress"}) ImageButton btnDropdownMenu = findViewById(R.id.btnDropdownMenu);
+        // Initialize the buttons
+        @SuppressLint({"WrongViewCast", "MissingInflatedId", "LocalSuppress"})
+        ImageButton btnProfileMenu = findViewById(R.id.btnProfileMenu);
+        @SuppressLint({"WrongViewCast", "MissingInflatedId", "LocalSuppress"})
+        ImageButton btnDropdownMenu = findViewById(R.id.btnDropdownMenu);
 
         // Initialize OpenCV
         if (OpenCVLoader.initLocal()) {
@@ -40,7 +43,6 @@ public class UserHomePageActivity extends ComponentActivity {
         }
 
         // Initialize the views by referencing their IDs
-        // Declare the views
         Button startNavigationButton = findViewById(R.id.start_navigation_button);
 
         // Setup the button click listeners
@@ -50,6 +52,12 @@ public class UserHomePageActivity extends ComponentActivity {
         if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.CAMERA}, 100);
         }
+
+        // Handle Profile Menu Button click
+        btnProfileMenu.setOnClickListener(v -> showProfileMenu());
+
+        // Handle Dropdown Menu Button click
+        btnDropdownMenu.setOnClickListener(v -> showDropdownMenu());
     }
 
     // Show Profile Menu
@@ -93,6 +101,8 @@ public class UserHomePageActivity extends ComponentActivity {
                         });
         builder.show();
     }
+
+    // Navigate to a different screen based on selected menu item
     private void navigateToMenu(String page) {
         Intent intent = switch (page) {
             case "home" -> new Intent(this, UserHomePageActivity.class);

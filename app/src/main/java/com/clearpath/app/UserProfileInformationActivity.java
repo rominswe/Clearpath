@@ -65,17 +65,31 @@ public class UserProfileInformationActivity extends AppCompatActivity {
                 .addOnSuccessListener(document -> {
                     progressBar.setVisibility(View.GONE);
                     if (document.exists()) {
-                        firstNameEditText.setText(document.getString("firstName"));
-                        lastNameEditText.setText(document.getString("lastName"));
-                        emailEditText.setText(document.getString("email"));
-                        phoneEditText.setText(document.getString("phoneNumber"));
-                        uniqueCodeTextView.setText(getString(R.string.unique_code, document.getString("uniqueCode")));
+                        // Fetching fields and checking if they exist
+                        String firstName = document.getString("firstName");
+                        String lastName = document.getString("lastName");
+                        String email = document.getString("email");
+                        String phoneNumber = document.getString("phoneNumber");
+                        String uniqueCode = document.getString("uniqueCode");
+
+                        // Set default text if the field is null
+                        firstNameEditText.setText(firstName != null ? firstName : "N/A");
+                        lastNameEditText.setText(lastName != null ? lastName : "N/A");
+                        emailEditText.setText(email != null ? email : "N/A");
+                        phoneEditText.setText(phoneNumber != null ? phoneNumber : "N/A");
+
+                        // For unique code, format the string if it exists
+                        uniqueCodeTextView.setText(getString(R.string.unique_code, uniqueCode != null ? uniqueCode : "N/A"));
+                    } else {
+                        // Handle case where the document does not exist
+                        Toast.makeText(this, "User details not found", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .addOnFailureListener(e -> {
                     progressBar.setVisibility(View.GONE);
                     Log.e("UserProfile", "Failed to fetch user details", e);
-                    Toast.makeText(this, "Failed to fetch user details", Toast.LENGTH_SHORT).show();
+                    // Better error handling with a user-friendly message
+                    Toast.makeText(this, "Failed to fetch user details. Please try again later.", Toast.LENGTH_SHORT).show();
                 });
     }
 
