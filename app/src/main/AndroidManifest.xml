@@ -68,6 +68,13 @@
             <!-- Optional Intent Filter can go here -->
         </activity>
 
+        <!-- UserSOSCallingActivity -->
+        <activity
+            android:name=".UserSOSCallingActivity"
+            android:exported="true">
+            <!-- Optional Intent Filter can go here -->
+        </activity>
+
         <!-- AssistantSignUpActivity -->
         <activity
             android:name=".AssistantSignUpActivity"
@@ -96,12 +103,20 @@
             <!-- Optional Intent Filter can go here -->
         </activity>
 
+        <!-- AssistantSOSCallingActivity -->
+        <activity
+            android:name=".AssistantSOSCallingActivity"
+            android:exported="true">
+            <!-- Optional Intent Filter can go here -->
+        </activity>
+        
         <!-- AssistantInformationActivity -->
         <activity
             android:name=".AssistantInformationActivity"
             android:exported="true">
             <!-- Optional Intent Filter can go here -->
         </activity>
+        
     </application>
 
 </manifest>
