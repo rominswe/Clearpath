@@ -1,0 +1,2 @@
+openCV/build/outputs/apk/androidTest/debug/openCV-debug-androidTest.apk filter=lfs diff=lfs merge=lfs -text
+openCV/build/outputs/aar/openCV-debug.aar filter=lfs diff=lfs merge=lfs -text
